@@ -1,6 +1,9 @@
-
+// TODO write comment
 public class Board
 {
-	private final int locationx
-	private final int locationy
+	// TODO write comment
+	private final int locationx;
+	
+	// TODO write comment
+	private final int locationy;
 }
