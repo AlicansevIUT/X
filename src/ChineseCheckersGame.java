@@ -4,28 +4,41 @@
  * @author canseva, berarddy
  */
 
+
 public class ChineseCheckersGame
 {
+	
+	private final Board board;
+	private final Player player;
+	
 	/**
 	 * Creates a new Chinese checkers game, ready to be played (board is in its starting configuration, players are ready)
 	 */
 	public ChineseCheckersGame()
 	{
-		// TODO declare board field
+		// TODO(done) declare board field
 		this.board = new Board();
+		this.player = new Player();
 		
-		// TODO where are players.
+		// TODO (done) where are players. 
 		
 	}
 	
-	// TODO detail comment (what is the main algorithm)
+	// TODO (done) detail comment (what is the main algorithm)
 	
 	/**
-	 * Play the game. It uses an algorithm which explains the progress of a game.
+	 *  
+	 * 
+	 * While nobody put all his pawns in the opposite side
+	 * 		then ask to the actual player his move
+	 * 			if the move is allowed
+	 * 				then the pawn is moved
+	 *			else ask to the same player a new move
+	 * 				
 	 */
 	public void play()
 	{
-	
-	}·
+		
+	}
 	
 }
