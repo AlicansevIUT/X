@@ -4,11 +4,13 @@
  * @author canseva, berarddy
  */
 
-
 public class ChineseCheckersGame
 {
-	
+
+	// TODO write comment
 	private final Board board;
+	
+	// TODO write comment
 	private final Player player;
 	
 	/**
@@ -16,15 +18,10 @@ public class ChineseCheckersGame
 	 */
 	public ChineseCheckersGame()
 	{
-		// TODO(done) declare board field
 		this.board = new Board();
-		this.player = new Player();
-		
-		// TODO (done) where are players. 
-		
+		this.player = new Player(); 
 	}
 	
-	// TODO (done) detail comment (what is the main algorithm)
 	
 	/**
 	 *  
@@ -38,6 +35,7 @@ public class ChineseCheckersGame
 	 */
 	public void play()
 	{
+		// TODO write code according to specs
 		
 	}
 	
