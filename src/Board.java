@@ -3,31 +3,24 @@
  * @author canseva, berarddy
  *
  */
-public class Board
+public class Board 
 {
+	private final static int limitx=17;
+	private final static int limity=17;
 	
+	private final static int x = 0;
+	// TODO (done)gather x and y in a class called position
 
-	// TODO gather x and y in a class called position
-	/**
-	 * Location X of the board
+	// TODO (done)fix comment
+	/** 
+	 * Create a new ChineseCheckers' board using Position
 	 */
-	private final int locationx;
 	
-	/**
-	 * Location Y of the board
-	 */
-	private final int locationy;
-
-	// TODO fix comment
-	/** Create a new ChineseCheckers' board
-	 * @param locationx
-	 * @param locationy
-	 */
-	public Board(int locationx, int locationy)
+	public Board(int x, int y)
 	{
-		while (locationx<17)
-		this.locationx = locationx;
-		this.locationy = locationy;
+			for (x=0 ; x<limitx ; x++)
+				for (y=0 ; y<limity ; y++)
+					
 	}
 
 }

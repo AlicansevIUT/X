@@ -7,10 +7,18 @@
 public class ChineseCheckersGame
 {
 
-	// TODO write comment
+	// TODO (done)write comment
+	
+	/**
+	 * it represents a board of a ChineseCheckersGame
+	 */
 	private final Board board;
 	
-	// TODO write comment
+	// TODO (done)write comment
+	
+	/**
+	 * it represents a player of a ChineseCheckersGame
+	 */
 	private final Player player;
 	
 	/**
@@ -24,7 +32,6 @@ public class ChineseCheckersGame
 	
 	
 	/**
-	 *  
 	 * 
 	 * While nobody put all his pawns in the opposite side
 	 * 		then ask to the actual player his move
