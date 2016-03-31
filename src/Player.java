@@ -5,7 +5,6 @@
  */
 public class Player
 {
-
 	
 	/**
 	 * name of the player
@@ -18,10 +17,12 @@ public class Player
 	private final int color;
 	
 	
-	// TODO (done)consider representing color as int constants, or (better) enumeration
+	// TODO write a comment per constant
 	/**
 	 * list of color available
 	 */
+	
+	// TODO rename constants (not compliant with naming conventions)
 	private final static int red = 1;
 	private final static int yellow = 2;
 	private final static int blue = 3;
@@ -29,6 +30,7 @@ public class Player
 	private final static int green = 5;
 	private final static int black = 6;
 	
+	// TODO detail comment: how (in which stated)is the player once created?
 	/** 
 	 * create a new player
 	 * @param name : name of the player
@@ -41,7 +43,7 @@ public class Player
 		this.color = color0;
 	}
 
-
+	// TODO fix comment (add a general description before @return)
 	/**
 	 * @return the name of the player
 	 */
@@ -50,6 +52,7 @@ public class Player
 		return name;
 	}
 
+	// TODO fix comment (add a general description before @return)
 	/**
 	 * @return the color of the player
 	 */

@@ -1,17 +1,24 @@
 /**
  * Board of a ChineseCheckers' Game
+ * 
  * @author canseva, berarddy
  *
  */
-public class Board 
+public class Board
 {
-	private final static int limitx=17;
-	private final static int limity=17;
-	
-	private final static int x = 0;
-	// TODO (done)gather x and y in a class called position
+	// TODO write comment
+	// TODO rename constant (not compliant with coding conventions)
+	private final static int limitx = 17;
 
-	// TODO (done)fix comment
+	// TODO write comment
+	// TODO rename constant (not compliant with coding conventions)
+	private final static int limity = 17;
+
+	// TODO write comment
+	// TODO rename constant (not compliant with coding conventions)
+	private final static int x = 0;
+
+	// TODO fix comment (how, in which state, is the board once created?)
 	/** 
 	 * Create a new ChineseCheckers' board using Position
 	 */
@@ -24,4 +31,3 @@ public class Board
 	}
 
 }
-
