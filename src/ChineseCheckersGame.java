@@ -35,14 +35,13 @@ public class ChineseCheckersGame
 	 * 
 	 * While nobody put all his pawns in the opposite side
 	 * 		then ask to the actual player his move
-	 * 			if the move is allowed
-	 * 				then the pawn is moved
-	 *			else ask to the same player a new move
+	 * 			while the move isn't allowed
+	 * 				then ask to the same player a new move
+	 *		    the pawn is moved
 	 * 				
 	 */
 	public void play()
-	{
-		// TODO write code according to specs
+	{// TODO write code according to specs
 		
 	}
 	

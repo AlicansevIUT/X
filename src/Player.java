@@ -17,22 +17,27 @@ public class Player
 	private final int color;
 	
 	
-	// TODO write a comment per constant
+	// TODO (done) write a comment per constant
 	/**
-	 * list of color available
+	 * RED = the red color for the pawn of a player
+	 * YELLOW = the yellow color for the pawn of a player
+	 * BLUE = the blue color for the pawn of a player
+	 * WHITE = the white color for the pawn of a player
+	 * GREEN = the green color for the pawn of a player
+	 * BLACK = the black color for the pawn of a player
 	 */
 	
-	// TODO rename constants (not compliant with naming conventions)
-	private final static int red = 1;
-	private final static int yellow = 2;
-	private final static int blue = 3;
-	private final static int white = 4;
-	private final static int green = 5;
-	private final static int black = 6;
+	// TODO (done) rename constants (not compliant with naming conventions)
+	private final static int RED = 1;
+	private final static int YELLOW = 2;
+	private final static int BLUE = 3;
+	private final static int WHITE = 4;
+	private final static int GREEN = 5;
+	private final static int BLACK = 6;
 	
-	// TODO detail comment: how (in which stated)is the player once created?
+	// TODO (done) detail comment: how (in which stated)is the player once created?
 	/** 
-	 * create a new player
+	 * create a new player with the name and the color chosen
 	 * @param name : name of the player
 	 * @param color0 : color chosen by the player
 	 */
@@ -43,8 +48,9 @@ public class Player
 		this.color = color0;
 	}
 
-	// TODO fix comment (add a general description before @return)
+	// TODO (done) fix comment (add a general description before @return)
 	/**
+	 * Using to get the name of the player
 	 * @return the name of the player
 	 */
 	public String getName()
@@ -52,8 +58,9 @@ public class Player
 		return name;
 	}
 
-	// TODO fix comment (add a general description before @return)
+	// TODO (done) fix comment (add a general description before @return)
 	/**
+	 * Using to get the color of the player
 	 * @return the color of the player
 	 */
 	public String getColor()
