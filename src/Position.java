@@ -9,12 +9,12 @@ public class Position
 	/**
 	 * The limit x of the board
 	 */
-	public final static int DEFAULT_LIMITX = 17;
+	public final static int DEFAULT_LIMITX = 13;
 
 	/**
 	 * The limit y of the board
 	 */
-	public final static int DEFAULT_LIMITY = 17;
+	public final static int DEFAULT_LIMITY = 16;
 
 	/**
 	 * Location X of the board
@@ -34,10 +34,10 @@ public class Position
 	 */
 	public Position(int locationX0, int locationY0)
 	{
-		if (this.locationX < DEFAULT_LIMITX)
+		if (this.locationX <= DEFAULT_LIMITX)
 			this.locationX = locationX0;
 
-		if (this.locationY < DEFAULT_LIMITY)
+		if (this.locationY <= DEFAULT_LIMITY)
 			this.locationY = locationY0;
 	}
 }

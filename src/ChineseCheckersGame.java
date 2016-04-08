@@ -12,14 +12,25 @@ public class ChineseCheckersGame
 	 * game board
 	 */
 	private final Board board;
+	
+	/**
+	 * position
+	 */
+	private Position position;
+	
+	/**
+	 * boolean 
+	 * false when the game is running
+	 * true when the game is over
+	 */
+	private boolean gameover;
 
-	// TODO (done)write comment
 
-	// TODO is it a single player game?
+	// TODO (done) is it a single player game?
 	/**
 	 * player
 	 */
-	private final Player player;
+	private Player player;
 
 	/**
 	 * Creates a new Chinese checkers game, ready to be played (board is in its
@@ -28,20 +39,24 @@ public class ChineseCheckersGame
 	public ChineseCheckersGame()
 	{
 		this.board = new Board();
-		this.player = new Player();
+		this.player = new Player(null, 0);
 	}
 
-	// TODO zoom out algorithm steps (not detail if not needed)
+	// TODO (done) zoom out algorithm steps (not detail if not needed)
 	/**
-	 * 
-	 * While nobody put all his pawns in the opposite side then ask to the
-	 * actual player his move while the move isn't allowed then ask to the same
-	 * player a new move the pawn is moved
-	 * 
+	 * While the game is not over
+	 * 		for all the players in the game
+	 * 			ask to the actual player a position 
+	 * 				while the position isn't allowed 
+	 *           		then ask to the same player a new position 
+	 *         		the pawn is moved to the position
 	 */
 	public void play()
-	{// TODO write code according to specs
-
+	{
+		// TODO write code according to specs
+			while (this.gameover==false)
+			 {
+				this.position
+			 }
 	}
-
 }

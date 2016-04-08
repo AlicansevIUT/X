@@ -1,4 +1,9 @@
-// TODO write comment
+// TODO (done) write comment
+/**
+ * It's the main class of the ChineseCheckersGame
+ * @author canseva, berarddy
+ *
+ */
 public class Main
 {
 	/**
