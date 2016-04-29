@@ -6,6 +6,10 @@
  */
 public class Player
 {
+	/**
+	 * number of the player
+	 */
+	private final int number;
 
 	/**
 	 * name of the player
@@ -83,4 +87,11 @@ public class Player
 	{
 		return this.color;
 	}
+
+	public Position askPosition()
+	{
+		return null ;
+	}
+	
+	
 }
