@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * Board of a ChineseCheckers' Game
  * 
@@ -7,10 +9,21 @@
 public class Board
 {
 	/**
+	 * The limit number of line in the tab
+	 */
+	private final static int TAB_LINE = 16;
+
+	/**
+	 * The limit number of column in the tab
+	 */
+	private final static int TAB_COLUMN = 13;
+	
+	/**
 	 * Array which represents position of the board
 	 */
-	int tab[][] = new int[16][13];
-
+	private int[][] tab = new int[TAB_LINE][TAB_COLUMN];
+	
+	
 	/**
 	 * Initial value of x in order to create the board
 	 */
@@ -21,16 +34,6 @@ public class Board
 	 */
 	private final static int DEFAULT_Y = 0;
 
-	/**
-	 * Position X of the board
-	 */
-	private int X;
-
-	/**
-	 * Position Y of the board
-	 */
-	private int Y;
-
 	// TODO (done) fix comment (how, in which state, is the board once created?)
 	/**
 	 * Create a new ChineseCheckers' board using an array which contains empty
@@ -38,21 +41,27 @@ public class Board
 	 */
 
 	public Board()
-	{
-		this.X=DEFAULT_X;
-		this.Y=DEFAULT_Y;
-		for (this.Y = 0; this.Y < this.tab.length; this.Y++)
+	{int x;
+	 int y;	
+		for (y = 0; y < this.tab.length; y++)
 		{
-			this.tab[this.Y] = new int[this.Y + 1];
+			this.tab[y] = new int[y + 1];
 		}
 
-		for (this.Y = 0; this.Y < this.tab.length; this.Y++)
+		for (y = 0; y < this.tab.length; y++)
 		{
-			for (this.X = 0; this.X < this.tab[this.Y].length; this.X++)
+			for (x = 0; x < this.tab[y].length; x++)
 			{
-				this.tab[this.X] = new int[this.X + 1];
+				this.tab[x] = new int[x + 1];
 			}
 
 		}
 	}
+
+	public String toString()
+	{
+		return "Board [tab=" + (tab != null ? Arrays.asList(tab) : null) + "]";
+	}	
+	
+	
 }

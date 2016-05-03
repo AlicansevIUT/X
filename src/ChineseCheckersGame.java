@@ -57,11 +57,9 @@ public class ChineseCheckersGame
 			 {
 			do	{
 				posi=this.player.askPosition();
-				}
-			while ()
+				}while (Position.isAllowed()=false);
 				
-					
-			 
-			 }
+			posi= new Position(int posix, int posiy);
+			 	}
 	}
 }

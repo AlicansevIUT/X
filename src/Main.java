@@ -12,7 +12,7 @@ public class Main
 	 * of the ChineseCheckersGame class
 	 */
 	public static void main(String[] args)
-	{
+	{		
 		new ChineseCheckersGame().play();
 	}
 }

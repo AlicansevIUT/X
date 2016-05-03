@@ -40,4 +40,14 @@ public class Position
 		if (this.locationY <= DEFAULT_LIMITY)
 			this.locationY = locationY0;
 	}
+
+	/**
+	 * @return
+	 */
+	public static boolean isAllowed(int posix, int posiy)
+	{
+		if (posix <= DEFAULT_LIMITX)
+		if (posiy <= DEFAULT_LIMITY);
+			
+	}
 }

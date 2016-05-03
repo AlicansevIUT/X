@@ -7,11 +7,6 @@
 public class Player
 {
 	/**
-	 * number of the player
-	 */
-	private final int number;
-
-	/**
 	 * name of the player
 	 */
 	private final String name;
@@ -68,7 +63,7 @@ public class Player
 	}
 
 	/**
-	 * Using to get the name of the player
+	 * Used to get the name of the player
 	 * 
 	 * @return the name of the player
 	 */
@@ -79,7 +74,7 @@ public class Player
 
 	// TODO (done)fix method (type mismatch)
 	/**
-	 * Using to get the color of the player
+	 * Used to get the color of the player
 	 * 
 	 * @return the color of the player
 	 */
@@ -88,8 +83,13 @@ public class Player
 		return this.color;
 	}
 
+	/**
+	 * Used to ask to the player a position
+	 * @return
+	 */
 	public Position askPosition()
 	{
+		
 		return null ;
 	}
 	
