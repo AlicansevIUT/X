@@ -13,6 +13,9 @@ public class Main
 	 */
 	public static void main(String[] args)
 	{		
-		new ChineseCheckersGame().play();
+		//new ChineseCheckersGame().play();
+		
+		Board bord = new Board();
+		System.out.println(""+bord.toString());
 	}
 }
