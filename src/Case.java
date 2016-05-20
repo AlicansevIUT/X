@@ -3,5 +3,10 @@ public enum Case
 {
 	DEAD,
 	EMPTY,
-	PAWN,
+	RED,
+	YELLOW,
+	BLUE,
+	WHITE,
+	GREEN,
+	BLACK,
 }
