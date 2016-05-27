@@ -40,14 +40,46 @@ public class Position
 		if (this.locationY <= DEFAULT_LIMITY)
 			this.locationY = locationY0;
 	}
+	
+	/**
+	 * getter for locationX of a position
+	 * @return this.locationX
+	 */
+	public int getLocationX()
+	{
+		return this.locationX;
+	}
+	
+	/**
+	 * getter for locationY of a position
+	 * @return this.locationY
+	 */
+	public int getLocationY()
+	{
+		return this.locationY;
+	}
 
 	/**
-	 * @return
+	 * check if the position is allowed
+	 * @param bord
+	 * @param posix 
+	 * @param posiy 
+	 * @return boolean
 	 */
-	public static boolean isAllowed(int posix, int posiy)
+	public boolean isAllowed(Board bord, int posix, int posiy)
 	{
-		if (posix <= DEFAULT_LIMITX)
-		if (posiy <= DEFAULT_LIMITY);
+		if (posix <= DEFAULT_LIMITX && posiy <= DEFAULT_LIMITY)
+		{
+			if (bord.getTab()[posix][posiy]==Case.EMPTY)
+			{
+				return true;
+			}
 			
+			if (bord.getTab()[posix][posiy]!=Case.EMPTY && bord.getTab()[posix+1][posiy]==Case.EMPTY || bord.getTab()[posix][posiy+1]==Case.EMPTY)
+			{
+				return true;
+			}	
+		}
+		return false;	
 	}
-}
+}	

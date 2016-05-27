@@ -1,3 +1,6 @@
+import java.util.Scanner; 
+import java.util.*;
+
 /**
  * Player of a ChineseCheckers' Game
  * 
@@ -6,6 +9,10 @@
  */
 public class Player
 {
+	private int number;
+	
+	
+
 	/**
 	 * name of the player
 	 */
@@ -54,12 +61,13 @@ public class Player
 	 *            : name of the player
 	 * @param color0
 	 *            : color chosen by the player
+	 * @param number0 
 	 */
-
-	public Player(String name0, int color0)
+	public Player(String name0, int color0, int number0)
 	{
 		this.name = name0;
 		this.color = color0;
+		this.number=number0;
 	}
 
 	/**
@@ -85,13 +93,41 @@ public class Player
 
 	/**
 	 * Used to ask to the player a position
-	 * @return
+	 * @return a position
 	 */
 	public Position askPosition()
 	{
+		int scx;
+		int scy;
+		Scanner scan = new Scanner(System.in);
+        scx = scan.nextInt(); 
+        scan.close();
+        
+        Scanner scan2 = new Scanner(System.in);
+        scy = scan.nextInt(); 
+        scan2.close();
+        
+		Position po = new Position(scx,scy) ;
 		
-		return null ;
+		return po;
 	}
 	
 	
+	/**
+	 * getter for the number of a player
+	 * @return number
+	 */
+	public int getNumber()
+	{
+		return this.number;
+	}
+	
+	/**
+	 * Setter for the number of a player
+	 * @param number
+	 */
+	public void setNumber(int number)
+	{
+		this.number = number;
+	}
 }

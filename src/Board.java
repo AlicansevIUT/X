@@ -21,17 +21,7 @@ public class Board
 	/**
 	 * Array which represents position of the board
 	 */
-	private Case[][] tab = new Case[TAB_LINE][TAB_COLUMN];
-
-	/**
-	 * Initial value of x in order to create the board
-	 */
-	private final static int DEFAULT_X = 0;
-
-	/**
-	 * Initial value of y in order to create the board
-	 */
-	private final static int DEFAULT_Y = 0;
+	private Case[][] tab;
 
 	// TODO (done) fix comment (how, in which state, is the board once created?)
 	/**
@@ -248,5 +238,14 @@ public class Board
 			res += "\n";
 		}
 		return res;
+	}
+
+	/**
+	 * getter for the tab
+	 * @return tab
+	 */
+	public Case[][] getTab()
+	{
+		return this.tab;
 	}
 }
